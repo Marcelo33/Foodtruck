@@ -1,0 +1,223 @@
+.cor{
+   background-color: #64429B; 
+
+}
+
+.tamanhologo{
+width: 150px;
+height: auto;
+
+}
+
+.branco{
+    color: white;
+}
+
+
+
+.quem-somos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* mantém duas colunas para texto e imagem */
+  gap: 2rem;
+  width: 60%; /* maior largura para ficar visível à esquerda */
+  margin: 5rem auto 5rem 0; /* empurra para esquerda (margem direita 0) */
+  padding: 2.5rem 3rem;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.texto {
+  grid-column: 1 / 2;
+}
+
+.texto h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  color: #1f1f1f;
+}
+
+.texto p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.imagem {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+..cor {
+  background-color: #64429B;
+  box-shadow: 0 3px 8px rgba(100, 66, 155, 0.5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.cor a, 
+.cor button {
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.cor a:hover,
+.cor button:hover,
+.cor a:focus,
+.cor button:focus {
+  color: #FFC107; /* amarelo para destaque */
+  outline: none;
+}
+
+.max-w-screen-xl {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+nav .flex {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tamanhologo {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.branco {
+  font-size: 2.2rem;
+  margin-left: 16px;
+  color: #fff;
+  user-select: none;
+  font-weight: 700;
+}
+
+button[data-collapse-toggle] {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button[data-collapse-toggle]:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+ul.flex {
+  display: flex;
+  gap: 1.5rem;
+}
+
+ul.flex li a,
+ul.flex li button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul.flex li a.active,
+ul.flex li a[aria-current="page"] {
+  background-color: #7E57C2; /* tom de roxo mais claro */
+  color: #fff;
+  font-weight: 700;
+}
+
+ul.flex li a:hover,
+ul.flex li button:hover {
+  background-color: #7E57C2;
+  color: #fff;
+}
+
+div#navbar-multi-level {
+  transition: max-height 0.3s ease;
+}
+
+/* Dropdown menu styles */
+#dropdownNavbar,
+#doubleDropdown {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  color: #333;
+  min-width: 180px;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  position: absolute;
+  z-index: 9999;
+}
+
+#dropdownNavbar a,
+#doubleDropdown a,
+#dropdownNavbar button {
+  display: block;
+  padding: 0.5rem 1.2rem;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+#dropdownNavbar a:hover,
+#doubleDropdown a:hover,
+#dropdownNavbar button:hover {
+  background-color: #7E57C2;
+  color: white;
+  outline: none;
+  border-radius: 8px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+  ul.flex {
+    flex-direction: column;
+    background-color: #5A3387;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  ul.flex li a,
+  ul.flex li button {
+    padding: 1rem;
+  }
+}
