@@ -1,5 +1,5 @@
 .cor{
-   background-color: #64429B; 
+   background-color: #1C2B45; 
 
 }
 
@@ -20,10 +20,10 @@ height: auto;
   grid-template-columns: 1fr 1fr; /* mantém duas colunas para texto e imagem */
   gap: 2rem;
   width: 60%; /* maior largura para ficar visível à esquerda */
-  margin: 5rem auto 5rem 0; /* empurra para esquerda (margem direita 0) */
+  margin:50px 500px 50px 570px; /* empurra para esquerda (margem direita 0) */
   padding: 2.5rem 3rem;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -37,13 +37,13 @@ height: auto;
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1.2rem;
-  color: #1f1f1f;
+  color: #E37F44;
 }
 
 .texto p {
   font-size: 1.15rem;
   line-height: 1.8;
-  color: #333;
+  color: #F9A97A;
 }
 
 .imagem {
@@ -62,7 +62,7 @@ height: auto;
 }
 
 ..cor {
-  background-color: #64429B;
+  background-color: #25374D;
   box-shadow: 0 3px 8px rgba(100, 66, 155, 0.5);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: sticky;
@@ -147,20 +147,20 @@ ul.flex li button {
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
-  color: white;
+  color: #ffaf5a;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ul.flex li a.active,
 ul.flex li a[aria-current="page"] {
-  background-color: #7E57C2; /* tom de roxo mais claro */
+  background-color: #E37F44; /* tom de roxo mais claro */
   color: #fff;
   font-weight: 700;
 }
 
 ul.flex li a:hover,
 ul.flex li button:hover {
-  background-color: #7E57C2;
+  background-color: #F9A97A;
   color: #fff;
 }
 
@@ -220,4 +220,92 @@ div#navbar-multi-level {
   ul.flex li button {
     padding: 1rem;
   }
+}
+
+body{
+  background-color: #f3eae1;
+}
+
+.cor_funcinalidades{
+  background-color: #1C2B45;
+}
+
+.text-xl{
+  color: #E37F44;
+}
+
+.flex{
+  color: #E37F44;
+}
+
+/* Sessão de funcionalidades */
+.funcionalidades-section {
+  background-color: #25374D;
+  padding: 3rem 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.funcionalidades-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.funcionalidades-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.funcionalidades-header h2 {
+  color: #E37F44;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.funcionalidades-header a {
+  color: #ff8543;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.funcionalidades-header a:hover {
+  text-decoration: underline;
+}
+
+/* Cards */
+.funcionalidades-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.funcionalidade-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.funcionalidade-card:hover {
+  background-color: #E37F44;
+  transform: translateY(-2px);
+}
+
+.funcionalidade-card img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.funcionalidade-card span {
+  color: #25374D;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
